@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @charset "utf-8";
+:root {
+  --color1: #FFFFFF;/*しろ*/
+  --color2: #F5F5F5;/*ぐれい*/
+  --color3: #eee;/*濃いグレイ*/
+  --color4: #666666;/*すごく濃いグレイ*/
+  --color5: #999999;/*文字に使うわりと濃いグレイ*/
+  --color6: #eb6a7a;/*ぴんく*/
+}
+/* 基本スタイル */
+* {
+    box-sizing: border-box;
+    font-family: "メイリオ", sans-serif;
+  }
+html {
+  font-size: 32px;
+}
+label,
+p,
+a {
+  font-size: 0.6rem;
+}
+.trix-content .attachment--preview .attachment__caption {
+  font-size: 0.4rem;
+}
+h1 {
+    font-size: 0.9rem;
+    color: black;
+    background-color: var(--color1);
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.2;
+}
+h2 {
+  font-size: 0.65rem;
+  color: black;
+  border-bottom: 2px solid var(--color6);
+  padding: 5px 0;
+  margin: 15px 0;
+}
+h3 {
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+}
+h3::before {
+  content: '●';
+  color: var(--color6);
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+button.trix-button {
+  font-size: 0.6rem;
+}
+.trix-content {
+  div, p {
+    font-size: 0.45rem;
+    line-height: 1.4;
+    color: var(--color4);
+  }
+}
